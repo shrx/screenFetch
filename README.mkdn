@@ -1,6 +1,9 @@
 screenFetch - The Bash Screenshot Information Tool
 ===============
 
+This is a fork of Screenfetch that works on OS X.
+---------------------
+
 What is screenFetch?
 ---------------------
 
