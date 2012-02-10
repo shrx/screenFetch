@@ -376,6 +376,7 @@ detectpkgs () {
 		'Slackware') pkgs=$(ls -1 /var/log/packages | wc -l) ;;
 		'Gentoo') pkgs=$(ls -d /var/db/pkg/*/* | wc -l) ;;
 		'Fedora'|'openSUSE'|'Red Hat Linux'|'Mandriva'|'Mandrake'|'Mageia') pkgs=$(rpm -qa | wc -l) ;;
+		'Mac OS X') [[ -d "/usr/local/bin" ]] && pkgs=$(echo $(ls /usr/local/bin | wc -w)) ;;
 	esac
 	[[ "$verbosity" -eq "1" ]] && verboseOut "Finding current package count...found as '$pkgs'"
 }
@@ -497,7 +498,7 @@ WM="Not Found"
 				'beryl') WM="Beryl";;
 				'monsterwm') WM="monsterwm";;
 				'dminiwm') WM="dminiwm";;
-				'Finder') WM="Finder";;
+				'Finder') WM="Quartz Compositor";;
 			esac
 		fi
 	done
