@@ -1,3 +1,6 @@
+This work has been merged to the main ScreenFetch repository and is currently not being updated. Please use this instead: https://github.com/KittyKatt/screenFetch
+===============
+
 screenFetch - The Bash Screenshot Information Tool
 ===============
 
